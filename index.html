@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vowel Counter</title>
+        <link rel="icon" href="favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="Wrapper">
+            <h1 class="Title">Lets Count Vowels</h1>
+            <div class="Input">
+              <input type="text" id="input" class="Input-text" placeholder="Give me Text">
+              <div style="text-align: center;">
+                <button type="button" class="btn btn-success btn-sub" id="sub" onclick="submit()">Submit for Analysis</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>We have counted Vowels:</h2>
+              </div>
+              <div class="modal-body vow">
+                <p id="vow" class="vowcount"></p>
+              </div>
+              <div class="modal-footer">
+                <h3>Kartikeya Agarwal</h3>
+              </div>
+            </div>
+          </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
