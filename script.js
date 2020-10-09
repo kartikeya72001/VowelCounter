@@ -4,7 +4,12 @@ var span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
     var ip = document.getElementById('input').value
-    var val = ip.match(/[aeiou]/gi).length;
+    try{
+      var val = ip.match(/[aeiou]/gi).length;
+    }
+    catch(err){
+      var val = 0;
+    }
     console.log(val)
     document.getElementById('vow').innerHTML = val
     modal.style.display = "block";
