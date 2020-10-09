@@ -148,6 +148,7 @@ body {
 .btn-sub{
     font-size: 4rem;
     margin: 5rem;
+    margin-left: 0;
 }
 .modal {
     display: none; /* Hidden by default */
